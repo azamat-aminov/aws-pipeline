@@ -17,4 +17,9 @@ public class AWSController {
         return ResponseEntity.ok().body(Map.of("Testing", "UP and RUNNING..."));
     }
 
+    @GetMapping("/v2")
+    public ResponseEntity<Map<String, String>> updatedTest() {
+        return ResponseEntity.ok().body(Map.of("Testing", "UP and RUNNING in VERSION 2..."));
+    }
+
 }
